@@ -38,11 +38,11 @@ class Solution:
 #Initial template for Python
 
 if __name__ == '__main__':
-    t=int(input())
+    t=int(input("Please enter the number of test cases: "))
     for i in range(t):
-        n=int(input())
-        arr=list(map(int, input().strip().split(' ')))
-        k=int(input())
+        n=int(input("Please enter the size of the array: "))
+        arr=list(map(int, input("Please enter the array elements separated by spaces: ").strip().split(' ')))
+        k=int(input("Please enter a key to search for: "))
         ob = Solution()
         print (ob.binarysearch(arr, n, k))
 

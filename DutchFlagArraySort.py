@@ -35,10 +35,10 @@ class Solution:
 #Initial Template for Python 3
 
 if __name__ == '__main__':
-    t = int(input())
+    t = int(input("Please enter a number of test cases: "))
     for _ in range(t):
-        n = int(input())
-        arr = [int(x) for x in input().strip().split()]
+        n = int(input("Pleaser size of the array: "))
+        arr = [int(x) for x in input("Please enter array elements separated by spaces: ").strip().split()]
         ob = Solution()
         ob.sort012(arr,n)
         for i in arr:
